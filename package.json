@@ -1,22 +1,23 @@
 {
-  "name": "@workspace/discord-bot",
-  "version": "0.0.0",
+  "name": "discord-bot",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "dev": "tsx src/index.ts",
     "start": "tsx src/index.ts",
-    "deploy": "tsx src/deploy-commands.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "deploy": "tsx src/deploy-commands.ts"
   },
   "dependencies": {
     "discord.js": "^14.18.0",
     "fast-xml-parser": "^4.5.0",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
-    "@types/node": "catalog:",
-    "tsx": "catalog:",
+    "@types/node": "^25.3.3",
     "typescript": "~5.9.3"
   }
 }
